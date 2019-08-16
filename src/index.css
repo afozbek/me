@@ -27,6 +27,7 @@ p {
     margin-bottom: 15px;
     letter-spacing: 0.3px;
     font-size: 0.95rem;
+    text-align: justify;
 }
 
 strong {
