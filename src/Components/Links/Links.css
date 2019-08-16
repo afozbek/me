@@ -8,3 +8,6 @@
 .social-links__link {
     color: #61ce62;
 }
+.social-links__link:hover {
+    color: #3daa3e;
+}
