@@ -16,9 +16,9 @@ const Buttons = props => {
                 Long Me
             </button>
 
-            <button onClick={() => props.whatILikeClickHandler()}>
+            {/* <button onClick={() => props.whatILikeClickHandler()}>
                 What I Like
-            </button>
+            </button> */}
         </div>
     );
 };
