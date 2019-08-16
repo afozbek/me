@@ -2,14 +2,16 @@ import React from "react";
 import Link from "./Link/Link";
 
 import "./Links.css";
+import { socialLinks } from "./SocialLinks";
 
 const Links = () => {
+    const { githubUrl, twitterUrl, linkedinUrl, codepenUrl } = socialLinks;
     return (
         <div className="social-links">
-            <Link href="#">Twitter</Link>
-            <Link href="#">Github</Link>
-            <Link href="#">Linkedin</Link>
-            <Link href="#">Codepen</Link>
+            <Link href={twitterUrl}>Twitter</Link>
+            <Link href={githubUrl}>Github</Link>
+            <Link href={linkedinUrl}>Linkedin</Link>
+            <Link href={codepenUrl}>Codepen</Link>
         </div>
     );
 };
