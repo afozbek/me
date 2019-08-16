@@ -1,6 +1,7 @@
 .social-links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 1.56rem;
 }
@@ -10,4 +11,13 @@
 }
 .social-links__link:hover {
     color: #3daa3e;
+}
+
+@media screen and (max-width: 450px) {
+    .social-links {
+        justify-content: center;
+    }
+    .social-links__link:not(:last-child) {
+        margin-right: 20px;
+    }
 }
