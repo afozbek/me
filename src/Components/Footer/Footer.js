@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Footer.css";
 
 const Footer = () => {
+    const [clickedButton, setClickedButton] = useState("whoAmI");
+
+    const [whoAmI, whatILike] = ["whoAmI", "whatILike"];
+
+    const whoAmIClickHandler = e => {
+        setClickedButton(whatILike);
+    };
+    const whatILikeClickHandler = e => {
+        setClickedButton(whoAmI);
+    };
+
     return (
         <div className="footer">
             <div className="footer__buttons">
-                <button>Who Am I</button>
+                {clickedButton === "whoAmI" ? (
+                    <button onClick={whoAmIClickHandler}>Who Am I</button>
+                ) : (
+                    <button onClick={whatILikeClickHandler}>What I Like</button>
+                )}
             </div>
             <div className="footer__short">
                 <p>
