@@ -4,6 +4,7 @@
 
 @media screen and (max-width: 700px) {
     .container {
-        padding: 30px;
+        padding: 0 30px;
+        margin-top: 0;
     }
 }
