@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Raleway|Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&display=swap");
 
 body {
     font-family: "Roboto Mono", monospace;
@@ -14,8 +14,20 @@ body {
 h1,
 h2,
 h3,
-p {
+h4,
+h5 {
     margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+p {
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+}
+
+strong {
+    color: #388e3cb5;
 }
 
 #root {
@@ -23,4 +35,8 @@ p {
     justify-content: center;
     align-items: center;
     margin: 50px auto;
+}
+
+.sm-margin-right {
+    margin-right: 10px;
 }
