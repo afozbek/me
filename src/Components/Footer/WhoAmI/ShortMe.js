@@ -6,7 +6,8 @@ const ShortMe = () => {
             <p>
                 Hi! I am Furkan
                 <span role="img" aria-label="hi">
-                    🖐🏻
+                    {" "}
+                    ✋🏻
                 </span>
             </p>
             <p>

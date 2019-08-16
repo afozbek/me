@@ -7,8 +7,9 @@ const LongMe = () => {
     return (
         <div className="footer__whoAmI">
             <p>
-                Hello! My name is Furkan.
+                Hello! My name is Furkan
                 <span role="img" aria-label="hi">
+                    {" "}
                     👨🏻‍💻
                 </span>
             </p>

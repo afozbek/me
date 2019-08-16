@@ -5,6 +5,10 @@
 .footer__buttons {
 }
 
+button::-moz-focus-inner {
+    border: 0;
+}
+
 .footer__buttons button {
     outline: none;
     border-radius: 3px;
