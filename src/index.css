@@ -23,7 +23,7 @@ h5 {
 p {
     margin-bottom: 15px;
     letter-spacing: 0.3px;
-    font-size: 15px;
+    font-size: 0.95rem;
 }
 
 strong {
@@ -38,5 +38,11 @@ strong {
 }
 
 .sm-margin-right {
-    margin-right: 10px;
+    margin-right: 0.625rem;
+}
+
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 15px;
+    }
 }

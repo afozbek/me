@@ -22,3 +22,19 @@
     color: #848282;
     font-weight: 500;
 }
+
+@media screen and (max-width: 615px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header__img img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .header__desc h1,
+    h3 {
+        text-align: center;
+    }
+}

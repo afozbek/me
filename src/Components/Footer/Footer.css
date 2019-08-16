@@ -26,3 +26,9 @@
 .footer__whatILike {
     margin-top: 25px;
 }
+
+@media screen and (max-width: 550px) {
+    .footer__buttons {
+        text-align: center;
+    }
+}
