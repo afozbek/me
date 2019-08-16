@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img {
+    margin-right: 30px;
+}
+.header__img img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.header__desc h1 {
+}
+
+.header__desc h3 {
+    color: #848282;
+    font-weight: 500;
+}
