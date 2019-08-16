@@ -1,0 +1,7 @@
+.activities {
+    list-style: none;
+    font-size: 14px;
+}
+.activities li {
+    margin: 5px;
+}

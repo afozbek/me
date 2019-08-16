@@ -14,6 +14,8 @@
 }
 
 .header__desc h1 {
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .header__desc h3 {
