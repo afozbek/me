@@ -13,6 +13,8 @@
     background: white;
     font-family: inherit;
     cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .footer__buttons button:hover {
