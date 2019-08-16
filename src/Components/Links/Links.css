@@ -1,0 +1,10 @@
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.social-links__link {
+    color: #61ce62;
+}
