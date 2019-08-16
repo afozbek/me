@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&display=swap");
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/RobotoMono-Regular.ttf") format("truetype");
+}
 
 body {
-    font-family: "Roboto Mono", monospace;
-    /* font-family: "Raleway", sans-serif; */
+    font-family: "Roboto", monospace;
 }
 
 h1,
