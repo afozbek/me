@@ -3,5 +3,5 @@ export const socialLinks = {
     githubUrl: "https://github.com/afozbek",
     codepenUrl: "https://codepen.io/afozbek",
     linkedinUrl: "https://linkedin.com/in/afozbek",
-    mailUrl: "mailto://furkanozbek1995@gmail.com"
+    mailUrl: "mailto:furkanozbek1995@gmail.com"
 };
