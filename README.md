@@ -18,7 +18,7 @@ You can easily deploy the project over [Netlify](https://www.netlify.com/) or `g
 
 - [React](https://tr.reactjs.org/) - UI library for javascript
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
-- 
+
 ## Contributing
 
 - If you have problems please leave an `issue` from [here](https://github.com/afozbek/me/issues)
