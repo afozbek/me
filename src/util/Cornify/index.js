@@ -125,7 +125,7 @@ export const cornify_add = function(options) {
     // Hooray - now we have a sparkly unicorn (or rainbow) on the page. Another cornification well done. Congrats!
 
     // When clicking 5 times, add a custom stylesheet to make the page look awesome.
-    if (cornify_count == 5) {
+    if (cornify_count === 5) {
         var cssExisting = document.getElementById("__cornify_css");
 
         if (!cssExisting) {
@@ -147,7 +147,7 @@ export const cornify_add = function(options) {
 // Tracks how often we cornified.
 var cornify_updatecount = function() {
     var p = document.getElementById("cornifycount");
-    if (p == null) {
+    if (p === null) {
         var p = document.createElement("p");
         p.id = "cornifycount";
         p.style.position = "fixed";
@@ -164,7 +164,7 @@ var cornify_updatecount = function() {
         body.appendChild(p);
     }
 
-    if (cornify_count == 1) {
+    if (cornify_count === 1) {
         p.innerHTML = cornify_count + " UNICORN OR RAINBOW CREATED";
     } else {
         p.innerHTML = cornify_count + " UNICORNS &AMP; RAINBOWS CREATED";
@@ -186,7 +186,7 @@ var cornify_getcookie = function(cname) {
     var ca = document.cookie.split(";");
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i].trim();
-        if (c.indexOf(name) == 0) {
+        if (c.indexOf(name) === 0) {
             return c.substring(name.length, c.length);
         }
     }
