@@ -13,4 +13,19 @@
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
     </body>
+    <script
+        type="text/javascript"
+        src="http://www.cornify.com/js/cornify.js"
+    ></script>
+    <script>
+        let keyArr = [];
+        let secret = "furkan";
+        window.addEventListener("keyup", e => {
+            keyArr.push(e.key);
+            keyArr.splice(-secret.length - 1, keyArr.length - secret.length);
+            if (keyArr.join("").includes(secret)) {
+                cornify_add();
+            }
+        });
+    </script>
 </html>
