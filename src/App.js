@@ -14,7 +14,6 @@ class App extends React.Component {
     };
 
     componentDidMount() {
-        console.log("Effectingg");
         this.keyUpListener = window.addEventListener(
             "keyup",
             this.keyUpEventListener
@@ -37,8 +36,6 @@ class App extends React.Component {
     };
 
     render() {
-        console.log(this.state.keyArr);
-
         if (this.state.keyArr.join("").includes(this.state.secret)) {
             cornify_add();
         }
