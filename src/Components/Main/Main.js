@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import "./Footer.css";
+import "./Main.css";
 import Activities from "./Activities/Activities";
 import ShortMe from "./WhoAmI/ShortMe";
 import LongMe from "./WhoAmI/LongMe";
 import Buttons from "./Buttons/Buttons";
 
-const Footer = () => {
+const Main = () => {
     const [shortMe, longMe, whatILike] = ["shortMe", "longMe", "whatILike"];
     const [clickedButton, setClickedButton] = useState(shortMe);
 
@@ -42,4 +42,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default Main;

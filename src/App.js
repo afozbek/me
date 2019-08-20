@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./Components/Header/Header";
 import Links from "./Components/Links/Links";
-import Footer from "./Components/Footer/Footer";
+import Main from "./Components/Main/Main";
 import { cornify_add } from "./util/Cornify";
 
 import "./App.css";
@@ -44,7 +44,7 @@ class App extends React.Component {
             <div className="container">
                 <Header />
                 <Links />
-                <Footer />
+                <Main />
             </div>
         );
     }
