@@ -1,6 +1,4 @@
 
-- You can see the project from [here](https://afozbek.github.io/me/)
-
 # Furkan's Personal Portfolio
 
 > This project includes my own personal portfolio. If you want to make yours as the same way just follow the installation and deployment sections.
