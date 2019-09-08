@@ -145,7 +145,7 @@ export const cornify_add = function(options) {
 var cornify_updatecount = function() {
   var p = document.getElementById("cornifycount");
   if (p === null) {
-    var p = document.createElement("p");
+    p = document.createElement("p");
     p.id = "cornifycount";
     p.style.position = "fixed";
     p.style.bottom = "5px";
@@ -231,10 +231,9 @@ var cornify_replace = function() {
 var cornami = {
   input: "",
   pattern: "38384040373937396665",
-  clear: setTimeout("cornami.clear_input()", 5000),
   load: function() {
     window.document.onkeydown = function(e) {
-      if (cornami.input == cornami.pattern) {
+      if (cornami.input === cornami.pattern) {
         cornify_add();
         clearTimeout(cornami.clear);
         return;
@@ -242,7 +241,6 @@ var cornami = {
         cornami.input += e ? e.keyCode : e.keyCode;
         if (cornami.input === cornami.pattern) cornify_add();
         clearTimeout(cornami.clear);
-        cornami.clear = setTimeout("cornami.clear_input()", 5000);
       }
     };
   },
