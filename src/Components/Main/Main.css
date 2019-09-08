@@ -1,37 +1,37 @@
 .footer {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 button::-moz-focus-inner {
-    border: 0;
+  border: 0;
 }
 
 .footer__buttons button {
-    outline: none;
-    border-radius: 3px;
-    border: 1.5px solid #98ee99;
-    padding: 5px 13px;
-    background: white;
-    font-family: inherit;
-    cursor: pointer;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+  outline: none;
+  border-radius: 3px;
+  border: 1.5px solid #ffa726c9;
+  padding: 5px 13px;
+  background: white;
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .footer__buttons button:hover {
-    background: #f0f0f057;
+  background: #f0f0f057;
 }
 
 .footer__whoAmI {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .footer__whatILike {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 550px) {
-    .footer__buttons {
-        text-align: center;
-    }
+  .footer__buttons {
+    text-align: center;
+  }
 }
