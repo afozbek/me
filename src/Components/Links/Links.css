@@ -1,32 +1,32 @@
 .social-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 1.56rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1.56rem;
 }
 
 .social-links__link {
-    color: #61ce62;
+  color: #fb8c00;
 }
 .social-links__link:hover {
-    color: #3daa3e;
+  color: #ef6c00;
 }
 
 @media screen and (max-width: 450px) {
-    .social-links {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .social-links__link:not(:last-child) {
-        margin-right: 20px;
-    }
+  .social-links {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .social-links__link:not(:last-child) {
+    margin-right: 20px;
+  }
 }
