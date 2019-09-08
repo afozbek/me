@@ -22,6 +22,12 @@ You can easily deploy the project over [Netlify](https://www.netlify.com/) or `g
 - If you have problems please leave an `issue` from [here](https://github.com/afozbek/me/issues)
 - Consider forking the project and submitting new `pull requests`. I am much likely control [my github account](https://github.com/afozbek).
 
+## Colors
+
+- Link Button Main Color: #61ce62 || #fb8c00
+- Link Button Hover Color: #3daa3e ||#ef6c00
+- Button Border Color: #98ee99 || #ffa726c9
+
 ## Authors
 
 - Follow me on [_github_](https://github.com/afozbek)
