@@ -1,17 +1,17 @@
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("assets/fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("assets/fonts/RobotoMono-Regular.ttf") format("truetype");
 }
 
 body {
-    font-family: "Roboto", monospace;
+  font-family: "Roboto", monospace;
 }
 
 h1,
@@ -19,40 +19,36 @@ h2,
 h3,
 h4,
 h5 {
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 p {
-    margin-bottom: 15px;
-    letter-spacing: 0.3px;
-    font-size: 0.95rem;
-    text-align: justify;
-}
-
-strong {
-    color: #61ce62;
+  margin-bottom: 15px;
+  letter-spacing: 0.3px;
+  font-size: 0.95rem;
+  text-align: justify;
 }
 
 #root {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 40px auto;
 }
 
 .sm-margin-right {
-    margin-right: 0.625rem;
+  margin-right: 0.625rem;
 }
 
 @media screen and (max-width: 550px) {
-    html {
-        font-size: 15px;
-    }
+  html {
+    font-size: 15px;
+  }
 }
