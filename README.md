@@ -1,5 +1,5 @@
 
-# Furkan's Personal Portfolio
+# Furkan's Personal Portfolio ~ YEmreAk.com
 
 > This project includes my own personal portfolio. If you want to make yours as the same way just follow the installation and deployment sections.
 
