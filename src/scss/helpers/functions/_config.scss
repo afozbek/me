@@ -1,0 +1,17 @@
+/*
+* Bazı browserlardaki margin problemlerini ortadan kaldırmak için yazılmış fonksiyondur
+*
+* 5 karakterden fazlasını slice eder
+* ÖRN: ınp_perc: 33.33333% --> out_perc: 33.33%
+*
+*/
+@function slice-cont-width($main-container-width, $card-number){
+  $sliced-card-container: ($main-container-width / ($card-number - 1)) + ""; // string e dönüştürüldü
+  $sliced-card-container-len: str-length($sliced-card-container); // "35%" --> 3 gibi
+
+  @if ($sliced-card-container-len > 5) {
+    $sliced-card-container: str-slice($sliced-card-container, 1, 5) + "%"; // string sonuna % ekler
+  }
+
+  @return unquote($sliced-card-container); // string değeri 33.33% gibi değere dönüştürür
+}

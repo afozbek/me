@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "./Link/Link";
 
-import "./Links.css";
 import { socialLinks } from "./SocialLinks";
 
 const Links = () => {

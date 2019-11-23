@@ -1,7 +1,6 @@
 import React from "react";
 
 import Furkan from "../../assets/images/furkan-ozbek.jpg";
-import "./Header.css";
 
 const Header = () => {
   return (
