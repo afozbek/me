@@ -1,0 +1,26 @@
+@mixin transition-ease {
+  transition: all .5s ease-in-out;
+}
+
+@mixin flex($direction, $wrapType, $justify, $align: center) {
+  display: flex;
+  flex-flow: $direction $wrapType;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/*
+* Banner Card Margin Right Hesaplama Mixini
+*
+* $container-width: Card'ların sahip olduğu Container Uzunluğu
+* $card-number: Görünecek Card Sayısı
+* $card-width: Card Uzunluğu
+* ($card-number - 1): margin sayısı (3 kart varsa 2 tane margin verilmesi gerekir)
+*/
+@mixin calc-margin-right($main-container-width, $card-number, $card-width) {
+  $card-container-width: slice-cont-width($main-container-width, $card-number);
+
+  margin-right: calc(#{$card-container-width} - ((#{$card-number} * #{$card-width}) / (#{$card-number} - 1)));
+}
+
+//margin-right: calc((#{$container-width} - (#{$card-number} * #{$card-width})) / (#{$card-number} - 1));

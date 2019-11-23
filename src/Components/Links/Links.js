@@ -1,8 +1,7 @@
 import React from "react";
 import Link from "./Link/Link";
 
-import "./Links.css";
-import { socialLinks } from "./SocialLinks";
+import { socialLinks } from "../../data/data.json";
 
 const Links = () => {
   const {
@@ -13,6 +12,7 @@ const Links = () => {
     mailUrl,
     devUrl
   } = socialLinks;
+
   return (
     <div className="social-links">
       <Link href={twitterUrl}>Twitter</Link>

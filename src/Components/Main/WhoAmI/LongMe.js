@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "../../Links/Link/Link";
 
-import { socialLinks } from "../../Links/SocialLinks";
+import { socialLinks } from "../../../data/data.json";
 
 const LongMe = () => {
   return (
