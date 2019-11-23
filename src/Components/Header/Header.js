@@ -1,6 +1,6 @@
 import React from "react";
 
-import profileImage from "../../assets/images/furkan-ozbek.jpg";
+import profileImage from "../../assets/images/furkan-ozbek.webp";
 import { jobTitle, name } from "../../data/data.json";
 
 const Header = () => {
