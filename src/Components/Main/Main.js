@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import Activities from "./Activities/Activities";
 import ShortMe from "./WhoAmI/ShortMe";
 import LongMe from "./WhoAmI/LongMe";
 import Buttons from "./Buttons/Buttons";
@@ -25,8 +24,6 @@ const Main = () => {
 
   if (clickedButton === longMe) {
     renderedContent = <LongMe />;
-  } else if (clickedButton === whatILike) {
-    renderedContent = <Activities />;
   }
 
   return (

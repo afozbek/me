@@ -43,8 +43,10 @@ class App extends React.Component {
     return (
       <div className="container">
         <Header />
-        <Links />
-        <Main />
+        <main>
+          <Links />
+          <Main />
+        </main>
       </div>
     );
   }
