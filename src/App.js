@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "./components/Header/Header";
-import Links from "./components/Links/Links";
-import Main from "./components/Main/Main";
+import Header from "./Components/Header/Header";
+import Links from "./Components/Links/Links";
+import Main from "./Components/Main/Main";
 import { cornify_add } from "./util/Cornify";
 
 import "./scss/main.scss";
