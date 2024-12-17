@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "../../Links/Link/Link";
+import { socialLinks } from "../../../util/constants";
 
 const ShortMe = () => {
   return (
@@ -12,22 +13,18 @@ const ShortMe = () => {
         </span>
       </p>
       <p>
-        I am a front end developer who likes to solve my problems with code. My
-        overall goal is to build performance systems and to develop stable
-        applications.
+        I am a frontend engineer over 5 years of experience. I built more than
+        50 different project with React, Vue, Angular & Next.js.
       </p>
       <p>
-        I am interested in web technologies and develop projects in this field.
-        I am especially familiar with {""}
-        <Link href="https://reactjs.org/">React</Link>{" "}
-        <span role="img" aria-label="react">
-          ⚛️
-        </span>
-        {", "}
-        <Link href="https://vuejs.org/">Vue</Link>
-        {", "}
-        <Link href="https://redux.js.org/">Redux</Link> and{" "}
-        <Link href="https://nodejs.org/en/">Node</Link>.
+        I like to build small side projects to have fun and learn new things.
+      </p>
+      <p>
+        Check out my projects on my{" "}
+        <Link href={socialLinks.githubUrl} target="_blank">
+          {" "}
+          Github
+        </Link>
       </p>
     </div>
   );

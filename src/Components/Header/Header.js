@@ -1,7 +1,6 @@
 import React from "react";
 
-import profileImage from "../../assets/images/furkan-ozbek.jpg";
-import { jobTitle, name } from "../../data/data.json";
+import profileImage from "../../assets/images/furkan-ozbek.jpeg";
 
 const Header = () => {
   return (
@@ -11,8 +10,8 @@ const Header = () => {
       </div>
 
       <div className="header__desc">
-        <h1>{name}</h1>
-        <h3>{jobTitle}</h3>
+        <h1>Abdullah Furkan Özbek</h1>
+        <h3>Frontend Engineer</h3>
       </div>
     </header>
   );
