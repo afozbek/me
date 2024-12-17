@@ -26,6 +26,7 @@ const App = () => {
     return () => {
       window.removeEventListener("keyup", keyUpEventListener);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (keyArr.join("").includes(secret)) {
