@@ -1,17 +1,10 @@
 import React from "react";
 import Link from "./Link/Link";
-
-import { socialLinks } from "../../data/data.json";
+import { socialLinks } from "../../util/constants";
 
 const Links = () => {
-  const {
-    githubUrl,
-    twitterUrl,
-    linkedinUrl,
-    codepenUrl,
-    mailUrl,
-    devUrl
-  } = socialLinks;
+  const { githubUrl, twitterUrl, linkedinUrl, codepenUrl, mailUrl, devUrl } =
+    socialLinks;
 
   return (
     <div className="social-links">

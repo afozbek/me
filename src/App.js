@@ -7,48 +7,40 @@ import { cornify_add } from "./util/Cornify";
 
 import "./scss/main.scss";
 
-class App extends React.Component {
-  state = {
-    keyArr: [],
-    secret: "furkan"
-  };
+const App = () => {
+  const [keyArr, setKeyArr] = React.useState([]);
+  const [secret] = React.useState("furkan");
 
-  componentDidMount() {
-    this.keyUpListener = window.addEventListener(
-      "keyup",
-      this.keyUpEventListener
-    );
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener(this.keyUpListener);
-  }
-
-  keyUpEventListener = e => {
+  const keyUpEventListener = (e) => {
     let newArr;
-    if (this.state.keyArr.length === this.state.secret.length) {
-      newArr = [...this.state.keyArr.slice(1), e.key];
+    if (keyArr.length === secret.length) {
+      newArr = [...keyArr.slice(1), e.key];
     }
 
-    this.setState(prevState => ({
-      keyArr: newArr ? [...newArr] : [...prevState.keyArr, e.key]
-    }));
+    setKeyArr((prevArr) => (newArr ? [...newArr] : [...prevArr, e.key]));
   };
 
-  render() {
-    if (this.state.keyArr.join("").includes(this.state.secret)) {
-      cornify_add();
-    }
+  React.useEffect(() => {
+    window.addEventListener("keyup", keyUpEventListener);
 
-    return (
-      <div className="container">
-        <Header />
-        <main>
-          <Links />
-          <Main />
-        </main>
-      </div>
-    );
+    return () => {
+      window.removeEventListener("keyup", keyUpEventListener);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (keyArr.join("").includes(secret)) {
+    cornify_add();
   }
-}
+
+  return (
+    <div className="container">
+      <Header />
+      <main>
+        <Links />
+        <Main />
+      </main>
+    </div>
+  );
+};
 export default App;
